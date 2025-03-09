@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const nextQuestionButton = document.getElementById("next-question")
   const timeElement = document.getElementById("time")
   const currentQuestionElement = document.getElementById("current-question")
-  const totalQuestionsElement = document.getElementById("total-question")
+  const totalQuestionsElement = document.getElementById("total-questions")
   const scoreElement = document.getElementById("final-score")
   const timeSpentElement = document.getElementById("time-spent")
   const correctAnswersElement = document.getElementById("correct-answers")
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentSlide = 0
   let currentQuestion = 0
   let totalQuestions = 10
-  let timeLeft = 30
+  let timeLeft = 45
   let timer
   let totalTime = 0
   let correctAnswers = 0
@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function startTimer() {
-    timeLeft = 30
+    timeLeft = 45
     updateTimer()
     timer = setInterval(() => {
       timeLeft--
